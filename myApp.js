@@ -2,7 +2,6 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
-let uri = "mongodb+srv://user1:utjwA5tNuduMDSOT@lighthouse.8sdhpcv.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true});
 
 const peopleSchema = new Schema({
